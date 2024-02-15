@@ -7,11 +7,14 @@
 </head>
 <body>
     <h1>All Skills</h1>
+    <a href="/skills/new">Add Skill</a>
     <ul>
         <% skills.forEach(skill => { %>
             <li>
-                <a href="/skills/<%= skill.id %>"><%= skill.skill %></a>
-            -  
+                <a href="/skills/><%= skill.skill %>">
+                    <%= skill.skill %>
+                </a>
+                -  
                 <%= skill.thisCourse ? 'it is ' : 'it is not ' %>taught
             </li>   
         <% }) %>   
